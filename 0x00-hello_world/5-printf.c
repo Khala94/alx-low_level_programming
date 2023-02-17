@@ -2,7 +2,6 @@
 
 int main (void)
 {
-	char test_str[] = "\"Programming is like building a multilingual puzzle";
-	puts(test_str);
-	return (0);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return(0);
 }
