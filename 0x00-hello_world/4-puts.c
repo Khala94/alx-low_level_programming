@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
 *
 * Program prints provided text
 */
