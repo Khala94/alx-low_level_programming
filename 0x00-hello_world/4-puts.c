@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-*
-* Program prints provided text
+* Program should print provided output
+* Print value if it returns 0
 */
 int main(void)
 {
