@@ -2,8 +2,7 @@
 
 /**
 * Function main should print provided values
-* Print values if program returns 
-*
+* Print values if program returns
 */
 int main (void)
 {
