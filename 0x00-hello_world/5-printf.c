@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* Function main should print provided values
-* Print values if program returns
+* main prints "with proper grammar, but the outcome is a piece of art,\n"
+* Return: 0
 */
 int main(void)
 {
