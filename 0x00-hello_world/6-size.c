@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-* Main - Print sizes of data
+* Main - "Print sizes of data"
 *
-* Description: Program should print sizes for char, int  long int
+* Description: "Program should print sizes for char, int  long int"
 *
 * Return: 0
 *
