@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
 * Main - Start of the program
@@ -25,5 +26,5 @@ int main(void)
 	{
 		printf("%d is zero", n);
 	}
-	reutn (0);
+	return (0);
 }
