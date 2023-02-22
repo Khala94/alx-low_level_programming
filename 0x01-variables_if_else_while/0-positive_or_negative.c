@@ -4,7 +4,6 @@
 /* All headers goes here*/
 
 /**
-*
 * main - Entry point
 * Return: Always 0
 */
