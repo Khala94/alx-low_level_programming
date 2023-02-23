@@ -6,11 +6,16 @@
 * Return: 0
 */
 
-int main(void)
+void print_line(int n)
 {
-	print_line(0);
-	print_line(2);
-	print_line(10);
-	print_line(-4);
-	return 0;
+	int i = 0;
+
+	if (n > 0)
+	{
+		for (i = 0; i < n; i++)
+		{
+			_putchar('_');
+		}
+	}
+	_putchar('\n');
 }
