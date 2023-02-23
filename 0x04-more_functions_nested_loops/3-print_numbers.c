@@ -3,16 +3,16 @@
 
 /**
 * print_number : print 0 - 9
-* Return: always 0
+* Return: 0 -9
 */
 
 int print_number(void)
 {
-	int a;
+	int i;
 
-	for (a = 48; a <= 57; a++)
+	for (i = 48; i <= 57; i++)
 	{
-		_putchar(a);
+		_putchar(i);
 	}
 	_putchar(10);
 }
