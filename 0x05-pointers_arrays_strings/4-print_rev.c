@@ -1,4 +1,4 @@
-#includw "main.h"
+#include "main.h"
 /* All my headers goes gere */
 
 /**
@@ -18,7 +18,7 @@ void print_rev(char *s)
 		x++;
 		for (i = x - 1; i >= 0; i--)
 		{
-			_putchar([i]);
+			_putchar(i);
 			_putchar(10);
 		}
 	}
