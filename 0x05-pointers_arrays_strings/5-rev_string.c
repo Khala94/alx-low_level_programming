@@ -28,4 +28,6 @@ void rev_string(char *s)
 			s[a - b - 1] = x;
 		}
 	}
+
+	return 0;
 }
