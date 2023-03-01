@@ -2,8 +2,9 @@
 /* All my headers goes here */
 
 /**
-* _puts - Prints values
-* @str : Values eill be stored here
+* _puts - Entry point
+* Description: Print values
+* @str: Values will be stored here
 * Return: the string
 */
 
