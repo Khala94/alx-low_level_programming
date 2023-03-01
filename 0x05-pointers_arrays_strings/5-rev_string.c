@@ -8,24 +8,20 @@
 * return: reversed variable
 */
 
-void rev_string(char *s)
+void rev_string(cha *s)
 {
-	int a, b;
+	int a = 0, e, f;
+	char g;
 
-	a = 0;
-
-	b = 0;
-
-	while (s[b++])
+	while (s[a] != '\0')
 	{
 		a++;
-
-		for (b	= a - 1; b >= a / 2; b--)
-		{
-			char x = s[b];
-
-			s[b] = s[a - b - 1];
-			s[a - b - 1] = x;
-		}
+	}
+	f = a - 1;
+	for (e = 0; f >= 0 && e < f; e++)
+	{
+		g = s[e];
+		s[e] = s[f];
+		s[f] = g;
 	}
 }
