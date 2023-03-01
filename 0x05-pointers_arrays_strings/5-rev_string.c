@@ -8,7 +8,7 @@
 * return: reversed variable
 */
 
-void rev_string(cha *s)
+void rev_string(char *s)
 {
 	int a = 0, e, f;
 	char g;
