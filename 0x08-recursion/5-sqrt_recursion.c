@@ -23,3 +23,18 @@ int find_sqrt(int num, int root)
 	}
 	return (find_sqrt(num, root + 1));
 }
+
+int _sqrt_recursion(int n)
+{
+	int root = 0;
+
+	if (n < 0)
+	{
+		return (-1);
+	}
+	else if (n == 1)
+	{
+		return (1);
+	}
+	return (find_sqrt(n, root));
+}
