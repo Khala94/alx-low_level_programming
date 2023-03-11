@@ -7,23 +7,20 @@
 * description: Print multiplication of 2 numbers
 * @argc: argument count
 * argv: argument value
-* retuurn: 0 always
+*
+* return: 0 always
 */
 
 int main(int argc, char *argv[])
 {
-	int i;
-
-	if (argc != 3)
+	if (argc == 1 || argc == 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
-		i = atoi(argv[1] * atoi(argv[2]));
-		printf("%d\n", i);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
 	}
-
-	return (0);
 }
