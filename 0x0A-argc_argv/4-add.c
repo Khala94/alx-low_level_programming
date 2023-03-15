@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+#include "main.h"
 /* All my headers goes here */
 
 /**
@@ -13,33 +14,33 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned int sum = 0;
-	char *j;
-	unsigned int k;
-	int i;
+	int i, j, len, sum;
+	char *ptr;
 
-	if (argc > 1)
+	if (argc == 1)
 	{
+		printf("0\n");
+		return (1);
+	}
+	else
+	{
+		sum = 0;
 		for (i = 1; i < argc; i++)
 		{
-			j = argv[i];
+			ptr = argv[i];
+			len = strlen(ptr);
 
-			for (k = 0; k < strlen(j); k++)
+			for (j = 0; j < len; j++)
 			{
-				if (j[k] < 48 || j[k] > 57)
+				if (isdigit(*(ptr + j)) == 0)
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
-			surm += atoi(j);
-			j++;
+			sum += atoi(argv[i]);
 		}
 		printf("%d\n", sum);
-	}
-	else
-	{
-		printf("0\n");
 	}
 	return (0);
 }
