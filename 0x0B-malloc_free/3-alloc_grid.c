@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main."
+#include "main.h"
 
 /**
  * **alloc_grid - Creates two dimensional array
@@ -44,3 +44,4 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return  (arr);
+}
