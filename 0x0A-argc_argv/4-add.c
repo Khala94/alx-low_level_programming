@@ -1,51 +1,45 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <ctype.h>
-#include "main.h"
-/** All my headers goee here */
+#include <string.h>
+/* All my headers goes here */
 
 /**
 * main - entry point
-* description: print sum of given numbers
-* @argc: argument count
-* @argv: argument value
-*
-* return: always 0
+* @argc: Argument count
+* @argv: Name of argument
+* return: 0
 */
 
 int main(int argc, char *argv[])
 {
-	int i, j, len, sum;
+	unsigned int sum = 0;
+	char *j;
+	unsigned int k;
+	int i;
 
-	char *ptr;
-
-	if (argc == 1)
+	if (argc > 1)
 	{
-		prinf("0\n");
-		return (1);
-	}
-	else
-	{
-		sum = 0;
-
 		for (i = 1; i < argc; i++)
 		{
-			ptr = argv[];
-			len = strlen(ptr);
+			j = argv[i];
 
-			for (j = 0; j < len; j++)
+			for (k = 0; k < strlen(j); k++)
 			{
-				if (isdigit(*(ptr + j)) == 0)
+				if (j[k] < 48 || j[k] > 57)
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
-
-			sum += atoi(argv[i]);
+			surm += atoi(j);
+			j++;
 		}
 		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("0\n");
 	}
 	return (0);
 }
